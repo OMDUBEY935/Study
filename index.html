@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-purple-300 to-blue-300 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white bg-opacity-70 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 w-full max-w-2xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-8 text-gray-800 tracking-tight">Daily Study Schedule</h1>
+        
+        <div class="flex flex-col gap-4">
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">10:00 AM - 12:30 PM:</span> DSA (2.5 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="2.5" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">12:30 PM - 1:00 PM:</span> Break (30 minutes)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="0.5" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">1:00 PM - 3:00 PM:</span> DSA (2 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="2" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">3:00 PM - 3:30 PM:</span> Short Break (30 minutes)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="0.5" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">3:30 PM - 5:30 PM:</span> Applitude (2 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="2" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">5:30 PM - 6:30 PM:</span> Sleep / Phone use / Game (1 hour)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="1" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">7:00 PM - 8:30 PM:</span> sabji / pani (1.5 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="1.5" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">8:30 PM - 11:30 PM:</span> Applitude (2 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="2" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">11:30 PM - 12:00 AM:</span> Short Break (30 minutes)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="0.5" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">12:00 AM - 2:00 AM:</span> DSA (2 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="2" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+            <p class="flex items-center bg-gray-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <input type="checkbox" class="task-checkbox mr-4 h-5 w-5 text-blue-600 bg-gray-200 border-gray-300 rounded focus:ring-blue-500">
+                <span class="flex-grow text-left">
+                    <span class="font-semibold">2:00 AM - 9:00 AM:</span> Sleep (7 hours)
+                </span>
+                <span class="timer-display ml-auto text-lg w-32 text-right">0h 0m 0s</span>
+                <button data-duration="7" class="start-button ml-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Start</button>
+                <button class="pause-button hidden ml-2 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1 px-2 rounded-lg transition-colors">Pause</button>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        const checkboxes = document.querySelectorAll('.task-checkbox');
+        const startButtons = document.querySelectorAll('.start-button');
+        const pauseButtons = document.querySelectorAll('.pause-button');
+        const timerDisplays = document.querySelectorAll('.timer-display');
+        
+        const storagePrefix = 'task-';
+        const timerPrefix = 'timer-';
+        const timerIntervals = {};
+
+        function loadStates() {
+            checkboxes.forEach((checkbox, index) => {
+                const key = storagePrefix + index;
+                const savedState = localStorage.getItem(key);
+                if (savedState !== null) {
+                    checkbox.checked = savedState === 'true';
+                }
+            });
+
+            startButtons.forEach((startButton, index) => {
+                const endTime = localStorage.getItem(timerPrefix + index);
+                const remainingTime = localStorage.getItem(timerPrefix + 'remaining-' + index);
+                const parsedEndTime = parseInt(endTime);
+                const parsedRemainingTime = parseInt(remainingTime);
+
+                if (endTime && !isNaN(parsedEndTime) && new Date().getTime() < parsedEndTime) {
+                    startTimer(startButton, index);
+                } else if (remainingTime && !isNaN(parsedRemainingTime)) {
+                    pauseButtons[index].classList.remove('hidden');
+                    startButton.textContent = 'Resume';
+                    startButton.classList.remove('bg-blue-500');
+                    startButton.classList.add('bg-green-500');
+                    updateTimerDisplay(timerDisplays[index], parsedRemainingTime);
+                } else {
+                    localStorage.removeItem(timerPrefix + index);
+                    localStorage.removeItem(timerPrefix + 'remaining-' + index);
+                    startButton.textContent = 'Start';
+                    startButton.classList.remove('bg-green-500');
+                    startButton.classList.add('bg-blue-500');
+                    pauseButtons[index].classList.add('hidden');
+                    updateTimerDisplay(timerDisplays[index], 0);
+                }
+            });
+        }
+
+        function saveState(checkbox, index) {
+            const key = storagePrefix + index;
+            localStorage.setItem(key, checkbox.checked);
+        }
+        
+        function updateTimerDisplay(displayElement, timeLeft) {
+            if (timeLeft < 0) timeLeft = 0;
+            const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            displayElement.textContent = `${hours}h ${minutes}m ${seconds}s`;
+        }
+        
+        function startTimer(startButton, index, startTime = new Date().getTime()) {
+            let durationInMs;
+            const remainingTime = localStorage.getItem(timerPrefix + 'remaining-' + index);
+            
+            if (remainingTime && !isNaN(parseInt(remainingTime))) {
+                durationInMs = parseInt(remainingTime);
+                localStorage.removeItem(timerPrefix + 'remaining-' + index);
+            } else {
+                const durationInHours = parseFloat(startButton.dataset.duration);
+                if (isNaN(durationInHours)) {
+                    console.error('Invalid duration value for timer:', startButton.dataset.duration);
+                    return;
+                }
+                durationInMs = durationInHours * 60 * 60 * 1000;
+            }
+
+            const endTime = startTime + durationInMs;
+            localStorage.setItem(timerPrefix + index, endTime);
+
+            startButton.classList.add('hidden');
+            pauseButtons[index].classList.remove('hidden');
+
+            clearInterval(timerIntervals[index]);
+
+            timerIntervals[index] = setInterval(() => {
+                const now = new Date().getTime();
+                const timeLeft = endTime - now;
+
+                if (timeLeft < 0) {
+                    clearInterval(timerIntervals[index]);
+                    checkboxes[index].checked = true;
+                    saveState(checkboxes[index], index);
+                    pauseButtons[index].classList.add('hidden');
+                    startButton.classList.remove('hidden');
+                    startButton.textContent = 'Done';
+                    localStorage.removeItem(timerPrefix + index);
+                    updateTimerDisplay(timerDisplays[index], 0);
+                    return;
+                }
+                updateTimerDisplay(timerDisplays[index], timeLeft);
+            }, 1000);
+        }
+
+        function pauseTimer(pauseButton, index) {
+            clearInterval(timerIntervals[index]);
+            
+            const now = new Date().getTime();
+            const endTime = parseInt(localStorage.getItem(timerPrefix + index));
+            if (isNaN(endTime)) return;
+            const remainingTime = endTime - now;
+
+            localStorage.setItem(timerPrefix + 'remaining-' + index, remainingTime);
+            localStorage.removeItem(timerPrefix + index);
+
+            pauseButton.classList.add('hidden');
+            startButtons[index].classList.remove('hidden');
+            startButtons[index].textContent = 'Resume';
+            startButtons[index].classList.remove('bg-blue-500');
+            startButtons[index].classList.add('bg-green-500');
+            
+            updateTimerDisplay(timerDisplays[index], remainingTime);
+        }
+        
+        function resetCheckboxesAt5AM() {
+            const now = new Date();
+            const fiveAM = new Date();
+            fiveAM.setHours(5, 0, 0, 0);
+
+            if (now > fiveAM) {
+                fiveAM.setDate(fiveAM.getDate() + 1);
+            }
+
+            const timeToWait = fiveAM.getTime() - now.getTime();
+
+            setTimeout(() => {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = false;
+                });
+                checkboxes.forEach((checkbox, index) => saveState(checkbox, index));
+                console.log('All checkboxes reset at 5:00 AM.');
+                resetCheckboxesAt5AM();
+            }, timeToWait);
+        }
+        
+        window.addEventListener('load', loadStates);
+        
+        checkboxes.forEach((checkbox, index) => {
+            checkbox.addEventListener('change', () => saveState(checkbox, index));
+        });
+
+        startButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                startTimer(button, index);
+            });
+        });
+        
+        pauseButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                pauseTimer(button, index);
+            });
+        });
+
+        resetCheckboxesAt5AM();
+    </script>
+</body>
+</html>
